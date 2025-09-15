@@ -3,7 +3,7 @@
 
 // --------- Config / State ----------
 const CLIENT_ID = "a9efb5fedc654d20b0ad8aefa93858bd"; // replace with your own if needed
-const REDIRECT_URI = "http://localhost:5173/"; // must match Spotify dashboard
+const REDIRECT_URI = "https://emelero.github.io/MusicGenreSorter/"; // must match Spotify dashboard
 const SCOPE = "user-library-read playlist-modify-public playlist-modify-private";
 
 
