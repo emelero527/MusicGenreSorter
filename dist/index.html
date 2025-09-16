@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify Genre Organizer</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" crossorigin src="/assets/index-BdnuFJH1.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-B33AQRls.css">
+</head>
+<body>
+  <h1>Spotify Genre Organizer</h1>
+  <button id="login-btn">Login with Spotify</button>
+
+  <h2>Your Library Genres</h2>
+  <div id="loading">
+    <div class="spinner"></div>
+    <p id="loading-text">Loading your songs... 0 fetched</p>
+  </div>
+
+  <div id="genre-tabs"></div>
+
+  <div id="search-container">
+    <input type="text" id="search-bar" placeholder="Search songs or artists...">
+  </div>
+
+  <div id="song-list"></div>
+
+  <canvas id="genreChart" width="400" height="200"></canvas>
+
+  <!-- ✅ IMPORTANT: relative path (not /src/main.js) -->
+</body>
+</html>
