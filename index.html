@@ -5,29 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spotify Genre Organizer</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" href="./src/style.css" />
 </head>
 <body>
   <h1>Spotify Genre Organizer</h1>
+  <p id="status">Not logged in. Click below to start.</p>
   <button id="login-btn">Login with Spotify</button>
 
-  <h2>Your Library Genres</h2>
   <div id="loading">
-    <div class="spinner"></div>
-    <p id="loading-text">Loading your songs... 0 fetched</p>
+    <p id="loading-text">Loading your songs...</p>
   </div>
 
-  <div id="genre-tabs"></div>
-
-  <div id="search-container">
-    <input type="text" id="search-bar" placeholder="Search songs or artists...">
+  <div id="song-card" class="hidden">
+    <img id="song-cover" class="cover" />
+    <h2 id="song-title"></h2>
+    <p id="song-artist"></p>
+    <p id="song-album"></p>
+    <div id="genre-buttons"></div>
+    <button id="undo-btn">Undo</button>
   </div>
 
-  <div id="song-list"></div>
+  <canvas id="genreChart"></canvas>
 
-  <canvas id="genreChart" width="400" height="200"></canvas>
+  <div id="playlist-buttons"></div>
 
-  <!-- ✅ IMPORTANT: relative path (not /src/main.js) -->
-  <script type="module" src="./src/main.js"></script>
+  <div id="toast" class="toast"></div>
+
+  <!-- ✅ Vite will rewrite this to correct /assets/xxxx.js -->
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>

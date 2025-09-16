@@ -1,5 +1,6 @@
 // main.js
 // Spotify Genre Organizer - Safe DOM-ready version with Add Genre button
+import "./style.css";
 
 // --------- Config / State ----------
 const CLIENT_ID = "a9efb5fedc654d20b0ad8aefa93858bd"; // replace with your own if needed
